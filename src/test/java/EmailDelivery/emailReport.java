@@ -21,8 +21,8 @@ public class emailReport {
      */
     public static void refreshAndSendEmail() throws InterruptedException {
         // Email credentials
-        final String username = "ali.hassan@mercurialminds.com"; // Your email address
-        final String password = "Basti@000"; // Your email password
+        final String username = "ali.hassan@gmail.com"; // Your email address
+        final String password = "password"; // Your email password
         String folderPath = "C:\\Users\\T490\\OneDrive\\Desktop\\Automation\\test-output"; // Folder path to be sent
 
         // Refresh the folder content (delete or update files)
