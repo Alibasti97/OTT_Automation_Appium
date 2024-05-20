@@ -46,8 +46,8 @@ public class splashTohome {
     private static final int THRESHOLD_TIME_MILLISECONDS = 11; // Threshold time in milliseconds
     private static final int EMAIL_THRESHOLD_SECONDS = 14; // Email alert threshold in seconds
 
-    private static final String EMAIL_USERNAME = "ali.hassan@mercurialminds.com";
-    private static final String EMAIL_PASSWORD = "Basti@000";
+    private static final String EMAIL_USERNAME = "ali.hassan@gmail.com";
+    private static final String EMAIL_PASSWORD = "Password";
     private static final String EMAIL_RECIPIENT = "alibasti2021@gmail.com";
     // Counter for iterations with load time exceeding 15 seconds
     private static final int consecutiveLoadTimeExceeds = 0;
@@ -202,7 +202,6 @@ public class splashTohome {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(EMAIL_USERNAME));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(EMAIL_RECIPIENT));
-            message.setRecipients(Message.RecipientType.CC, InternetAddress.parse("ali.asad@mercurialminds.com, jtnoc@mercurialminds.com, sarfraz.khan@mercurialminds.com, tahawar.ali@mercurialminds.com"));
             message.setSubject("Warning - Load Time Exceeded");
             message.setText("Load time exceeded 15 seconds. Load Time is: " + loadTimeSeconds + " seconds");
 
