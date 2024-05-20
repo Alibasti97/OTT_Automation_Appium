@@ -46,9 +46,8 @@ public class emailReport {
         try {
             // Create email message
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("ali.hassan@mercurialminds.com")); // Set sender's email
+            message.setFrom(new InternetAddress("ali.hassan@gmail.com")); // Set sender's email
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("mercurials2024@gmail.com")); // Set recipient's email
-            message.setRecipients(Message.RecipientType.CC, InternetAddress.parse(" sarfraz.khan@gmail.com, m.minds456@gmail.com ,tahawar.ali1@gmail.com, faryal.1623@gmail.com"));
             message.setSubject("TestNG Automation Report (TAMASHA APP)"); // Email subject
 
             message.setText("Please find the folder contents attached.");
