@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="1">
+
+    <!-- Parameters can be added here if needed -->
+    <!-- <parameter name="env" value="staging"/> -->
+    <listeners>
+        <listener class-name="extentPackage.TestListener"/>
+    </listeners>
+
+    <test name="Tamasha_App_Automation" preserve-order="true">
+        <classes>
+            <class name="TamashaAppTests.mainApp">
+                <methods>
+<!--                    <include name="loginScenario"/>-->
+<!--                    <include name="redeemCoins"/>-->
+<!--                    <include name="getCoinsCount"/>-->
+<!--                    <include name="screenVer"/>-->
+<!--                    <include name="liveStreaming"/>-->
+<!--                    <include name="screenScrolltoEnd"/>-->
+<!--                    <include name="splashToHomeScreen"/>-->
+<!--                    <include name="HometoStreaming"/>-->
+<!--                    <include name="slider"/>-->
+<!--                    <include name="search"/>-->
+<!--                    <include name="scrollandShot"/>-->
+<!--                    <include name="commentsPostingloop"/>-->
+<!--                    <include name="fanpulseplay"/>-->
+<!--                    <include name="howitWorks"/>-->
+<!--                    <include name="reels"/>-->
+<!--                    <include name="Vod"/>-->
+<!--                    <include name="deleteuserLoginagain"/>-->
+<!--                    <include name="FanPulsePlayFromHome"/>-->
+<!--                    <include name="profileUpdate"/>-->
+<!--                    <include name="DynamicTile"/>-->
+<!--                    <include name="Pakistan_vs_England"/>-->
+<!--                    <include name="recommendationEngine"/>-->
+<!--                    <include name="verifyLiveStreaming"/>-->
+                    <include name="RewardsLoadTime"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
